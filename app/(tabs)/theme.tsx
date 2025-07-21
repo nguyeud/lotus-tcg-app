@@ -1,12 +1,13 @@
-import { Center } from "@/components/ui/center";
-import { Text } from "@/components/ui/text";
 import { StyleSheet } from "react-native";
+
+import { Box } from "@/components/ui/box";
+import { Text } from "@/components/ui/text";
 
 export default function ThemeTab() {
   return (
-    <Center style={styles.container}>
+    <Box style={styles.container}>
       <Text>This is the Theme tab.</Text>
-    </Center>
+    </Box>
   );
 }
 

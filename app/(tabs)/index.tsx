@@ -1,13 +1,13 @@
 import { StyleSheet } from "react-native";
 
-import { Center } from "@/components/ui/center";
+import { Box } from "@/components/ui/box";
 import { Text } from "@/components/ui/text";
 
 export default function HomeTab() {
   return (
-    <Center style={styles.container}>
+    <Box style={styles.container}>
       <Text>This is the Home tab.</Text>
-    </Center>
+    </Box>
   );
 }
 
