@@ -38,8 +38,12 @@ export default function RootLayout() {
           className="bottom-16"
           onPress={() => {
             setColorScheme(colorScheme === "light" ? "dark" : "light");
-          }}>
-          <FabIcon as={colorScheme === "dark" ? SunIcon : MoonIcon} color="black"/>
+          }}
+        >
+          <FabIcon
+            as={colorScheme === "dark" ? SunIcon : MoonIcon}
+            color="black"
+          />
         </Fab>
         <StatusBar style="auto" />
       </ThemeProvider>
