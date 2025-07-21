@@ -2,8 +2,8 @@ import gluestackPlugin from "@gluestack-ui/nativewind-utils/tailwind-plugin";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "media",
-  content: ["app/**/*.{tsx,jsx,ts,js}", "components/**/*.{tsx,jsx,ts,js}"],
+  darkMode: process.env.DARK_MODE ? process.env.DARK_MODE : "media",
+  content: ["./app/**/*.{tsx,jsx,ts,js}", "./components/**/*.{tsx,jsx,ts,js}"],
   presets: [require("nativewind/preset")],
   safelist: [
     {
@@ -43,6 +43,7 @@ module.exports = {
           950: "rgb(var(--color-secondary-950)/<alpha-value>)",
         },
         tertiary: {
+          0: "rgb(var(--color-tertiary-0)/<alpha-value>)",
           50: "rgb(var(--color-tertiary-50)/<alpha-value>)",
           100: "rgb(var(--color-tertiary-100)/<alpha-value>)",
           200: "rgb(var(--color-tertiary-200)/<alpha-value>)",
@@ -54,6 +55,20 @@ module.exports = {
           800: "rgb(var(--color-tertiary-800)/<alpha-value>)",
           900: "rgb(var(--color-tertiary-900)/<alpha-value>)",
           950: "rgb(var(--color-tertiary-950)/<alpha-value>)",
+        },
+        accent: {
+          0: "rgb(var(--color-accent-0)/<alpha-value>)",
+          50: "rgb(var(--color-accent-50)/<alpha-value>)",
+          100: "rgb(var(--color-accent-100)/<alpha-value>)",
+          200: "rgb(var(--color-accent-200)/<alpha-value>)",
+          300: "rgb(var(--color-accent-300)/<alpha-value>)",
+          400: "rgb(var(--color-accent-400)/<alpha-value>)",
+          500: "rgb(var(--color-accent-500)/<alpha-value>)",
+          600: "rgb(var(--color-accent-600)/<alpha-value>)",
+          700: "rgb(var(--color-accent-700)/<alpha-value>)",
+          800: "rgb(var(--color-accent-800)/<alpha-value>)",
+          900: "rgb(var(--color-accent-900)/<alpha-value>)",
+          950: "rgb(var(--color-accent-950)/<alpha-value>)",
         },
         error: {
           0: "rgb(var(--color-error-0)/<alpha-value>)",
